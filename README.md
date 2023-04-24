@@ -1,6 +1,12 @@
 # Executing code
-pip install -r requirements.txt
 python main.py 2021-03-04T03:00:00Z 2021-03-08T11:59:59Z
+
+I included a requirements.txt if required but it may not be complete
+pip install -requirement requirements.txt
+
+I also included a mini test bash script to go over the test cases I used. However if you jump to the #d44b9f3cfba2e495bc2bd70238075f8a4be3856d commit 
+you can use a pytest that I included since at that time I was storing the combined data in a list
+pytest -vv
 
 # Proccessing the Data
 If you view the get request from the *data* endpoint as a tuple of datetime to float you can then use a hashmap that maps 
